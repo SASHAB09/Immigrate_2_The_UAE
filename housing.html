@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing</title>
+</head>
+
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar{
+        background-color: rgb(179, 179, 179); display: flex; justify-content: center;
+        width: 100%;
+    }
+    .navbar a{
+        text-decoration: none; color: black; font-size: 18px;
+        padding: 1%;
+    }
+
+    .header{
+        background-color: rgb(164, 164, 164); display: flex; justify-content: space-around;
+        height: 350px; align-items: center;
+    }
+    .header h1{
+        font-size: 75px;
+    }
+    .ip_links{
+        display: flex; flex-direction: column; width: 250px;
+    }
+    .ip_links a{
+        background-color: gray; padding: 5%; text-decoration: none; color: black;
+        font-size: 22px; text-align: center;
+    }
+    .ip_links a:hover{
+        background-color: rgb(146, 146, 146);
+    }
+
+    .content{
+        display: flex; padding: 3%; justify-content: space-around;
+    }
+    .content p{
+        font-size: 20px; width: 600px;
+    }
+    .content img{
+        width: 400px;
+    } 
+
+    .video{
+        display: flex; justify-content: center;
+    }
+
+</style>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="housing.html">Housing</a>
+        <a href="eid.html">EID</a>
+        <a href="driving.html">Driving</a>
+    </div> 
+
+    
+    <div class="header">
+        <h1>Housing</h1>
+        <div class="ip_links">
+            <a href="#main_content">Inter-page 1</a>
+            <a href="#housing_video">Inter-page 2</a>
+        </div>
+    </div>
+
+    <div class="content" id="main_content">
+
+        <div class="left">
+        <h1 class="subheading">Finding housing in the UAE</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro ab tempore magni deserunt veniam doloribus eius labore. Maxime saepe libero, eum voluptatum consequuntur quia est. Possimus quaerat perferendis sapiente voluptatum?</p>
+        </div>
+
+        <div class="right">
+            <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/thenational/7EAP7TQXF5HWLIN6USJIJZOH4I.png" alt="" width="400px">
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="video" id="housing_video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cptZ4-MKq-Y?si=d5tm_lmaejb9soIu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    
+</body>
+</html>
